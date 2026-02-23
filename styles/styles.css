@@ -1,0 +1,66 @@
+.background {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, black, orangered);
+    padding: 20px;
+}
+
+.principal {
+    text-align: center;
+    margin: 50px;
+}
+
+.pantalla {
+    align-self: center;
+    text-align: center;
+    border-radius: 5px;
+    width: 75%;
+    max-width: 200px;
+    height: 30px;
+    border-color: black;
+    border-width: 4px;
+    border-style: double;
+    background-color: grey;
+    margin: 0 auto;
+}
+
+.numero {
+    background: linear-gradient(to bottom, orangered, black);
+    color: white;
+}
+
+.simbolo {
+    background: linear-gradient(to bottom, orangered 60%, black );
+    color: gainsboro;
+}
+
+.calcular {
+    background: linear-gradient(to bottom, orangered 60%, black );
+    color: gainsboro;
+}
+
+.borrar {
+    background: linear-gradient(to bottom, orangered 60%, black );
+    color: gainsboro;
+}
+
+button:hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+button {
+    width: 26%;
+    max-width: 69px;
+    height: 69px;
+    margin: -2px;
+    border-radius: 1px;
+    border-width: 1px;
+}
+
+body {
+    margin: 0;
+}
