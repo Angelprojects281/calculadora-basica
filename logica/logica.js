@@ -28,7 +28,7 @@ function agregarSim() {
                     pantalla.textContent+= "-";
                     return;}
             
-            } else if (["+","*","/","-"].includes(pantalla.textContent.slice(-1))){ //evita que se pongan dos simbolos seguidos excepto los negativos
+            } else if (["+","*","/","-","."].includes(pantalla.textContent.slice(-1))){ //evita que se pongan dos simbolos seguidos excepto los negativos
                 if (s.target.value === "-" && pantalla.textContent.slice(-1) !== "-"){
                     pantalla.textContent+= "-";
                     return;}          
@@ -44,19 +44,24 @@ function calcular() { // calcula el resultado usando el metodo eval
             pantalla.textContent= "error matematico";
             resultadoFin= true;
         } else { // muestra el resultado
-            pantalla.textContent= resultado;
-            resultadoFin= true;}
+            pantalla.textContent= parseFloat(resultado.toFixed(10));
+            }
     } catch { // maneja los errores matematicos 
         pantalla.textContent= "error matematico";
         resultadoFin= true;
     }
 }
 
-function borrar() { // limpia la pantalla
+function limpiar() { // limpia la pantalla
     pantalla.textContent= ""
+}
+
+function borrar(){
+    pantalla.textContent= pantalla.textContent.slice(0,-1);
 }
 
 agregarNum()//llama a la funcion para que este activa
 agregarSim()
 document.querySelector(".calcular").addEventListener("click",calcular)
-document.querySelector(".borrar").addEventListener("click",borrar)
+document.querySelector("#borrar").addEventListener("click",borrar)
+document.querySelector("#limpiar").addEventListener("click",limpiar)
