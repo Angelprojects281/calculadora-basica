@@ -21,6 +21,7 @@
     background-color: grey;
     margin: 0 auto;
     font-size: xx-large;
+    overflow: auto;
 }
 
 .numero {
@@ -53,9 +54,9 @@ button:active{
 }
 
 button {
-    width: 30%;
+    width: 33%;
     max-width: 100px;
-    height: 100px;
+    height: 90px;
     margin: -2px;
     border-radius: 1px;
     border-width: 1px;
