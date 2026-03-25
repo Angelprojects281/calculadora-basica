@@ -1,6 +1,6 @@
 .background {
     min-height: 100vh;
-    background: linear-gradient(to bottom, black, orangered);
+    background: linear-gradient(to bottom, #000000, #ff4500);
     padding: 20px;
 }
 
@@ -15,14 +15,14 @@
 
 .pantalla {
     text-align: right;
-    border-radius: 5px;
+    border-radius: 30px;
     width: 100%;
-    max-width: 280px;
+    max-width: 350px;
     height: 50px;
-    border-color: black;
+    border-color: #000000;
     border-width: 4px;
     border-style: double;
-    background-color: grey;
+    background-color: #808080;
     margin: 0 auto;
     font-size: xx-large;
     overflow: auto;
@@ -30,23 +30,23 @@
 }
 
 .numero {
-    background: linear-gradient(to bottom, orangered, black);
+    background: linear-gradient(to bottom, #ff4500, #000000);
     color: white;
 }
 
 .simbolo {
-    background: linear-gradient(to bottom, orangered 60%, black );
+    background: linear-gradient(to bottom, #ff4500 60%, #000000 );
     color: gainsboro;
 }
 
 .calcular {
-    background: linear-gradient(to bottom, orangered 60%, black );
+    background: linear-gradient(to bottom, #ff4500 60%, #000000 );
     color: gainsboro;
     grid-column: span 2;
 }
 
 .borrar {
-    background: linear-gradient(to bottom, orangered 60%, black );
+    background: linear-gradient(to bottom, #ff4500 60%, #000000 );
     color: gainsboro;
 }
 
@@ -62,13 +62,30 @@ button:active{
 button {
     width: 100%;
     height: 70px;
-    margin: -2px;
-    border-radius: 1px;
+    margin: -0;
+    border-radius: 6px;
     border-width: 1px;
     font-size: larger;
     font-weight: bolder;
+
 }
 
 body {
     margin: 0;
+}
+
+#portafolio {
+    display: flex;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 30px;
+    border-width: 5px;
+    border-style: double;
+    background-color: #fc5628;
+    font-size: 12px;
+    opacity: 0.6;
 }
